@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubenyan's pastry — торты и десерты на заказ</title>
+  <meta name="description" content="Rubenyan's pastry — авторские торты и десерты на заказ от кондитера Ованеса. Фото работ, немного истории, контакты.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Rubenyan's pastry</a>
+      <div class="lang-switch" id="langSwitch">
+        <button type="button" data-lang="ru" class="is-active">RU</button>
+        <button type="button" data-lang="hy">HY</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" data-i18n-aria-label="nav.toggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#hero" data-i18n="nav.about">О мастере</a>
+        <a href="#works" data-i18n="nav.works">Работы</a>
+        <a href="#contacts" data-i18n="nav.contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="hero" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__photo-wrap">
+          <img class="hero__photo" src="images/portrait/portrait.jpg" data-i18n-alt="hero.photoAlt" alt="Портрет кондитера Ованеса" loading="lazy">
+          <div class="hero__orbit">
+            <div class="hero__orbit-item" style="--start-angle: 0deg">
+              <img class="hero__satellite" src="images/works/work-1.jpg" data-i18n-alt="photo.tort" alt="Торт на заказ" loading="lazy">
+            </div>
+            <div class="hero__orbit-item" style="--start-angle: 90deg">
+              <img class="hero__satellite" src="images/works/work-3.jpg" data-i18n-alt="photo.pirozhnoe" alt="Пирожные ассорти" loading="lazy">
+            </div>
+            <div class="hero__orbit-item" style="--start-angle: 180deg">
+              <img class="hero__satellite" src="images/works/work-5.jpg" data-i18n-alt="photo.pirog" alt="Домашний пирог" loading="lazy">
+            </div>
+            <div class="hero__orbit-item" style="--start-angle: 270deg">
+              <img class="hero__satellite" src="images/works/work-6.jpg" data-i18n-alt="photo.kapkeyk" alt="Праздничные капкейки" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="hero__text">
+          <h1>Rubenyan's pastry</h1>
+          <p class="hero__lead" data-i18n="hero.lead">Торты, пирожные, пироги и капкейки ручной работы — на день рождения, свадьбу или просто для радости.</p>
+          <p data-i18n="hero.text">Я Ованес, и с Rubenyan's pastry ваш праздник точно будет вкусным. Тортами и выпечкой занимаюсь с 17 лет — и за это время ни разу не разлюбил своё дело, а значит, в каждый торт вкладываю не только хорошие продукты, но и настоящее удовольствие от работы. Учту любые пожелания по вкусу и оформлению — так, чтобы захотелось заказать ещё.</p>
+          <div class="hero__actions">
+            <a href="#contacts" class="btn btn--primary" data-i18n="hero.cta1">Заказать торт</a>
+            <a href="#works" class="btn btn--outline" data-i18n="hero.cta2">Смотреть работы</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="gallery">
+      <div class="container">
+        <h2 class="section-title" data-i18n="works.title">Работы</h2>
+        <div class="gallery__filters" id="galleryFilters">
+          <button class="gallery__filter is-active" data-filter="all" data-i18n="filter.all">Все</button>
+          <button class="gallery__filter" data-filter="tort" data-i18n="filter.tort">Торты</button>
+          <button class="gallery__filter" data-filter="pirozhnoe" data-i18n="filter.pirozhnoe">Пирожные</button>
+          <button class="gallery__filter" data-filter="pirog" data-i18n="filter.pirog">Пироги</button>
+          <button class="gallery__filter" data-filter="kapkeyk" data-i18n="filter.kapkeyk">Капкейки</button>
+        </div>
+        <div class="gallery__grid" id="galleryGrid">
+          <img class="gallery__photo" src="images/works/work-1.jpg" data-i18n-alt="photo.tort" alt="Торт на заказ" data-category="tort" loading="lazy">
+          <img class="gallery__photo" src="images/works/work-2.jpg" data-i18n-alt="photo.tort" alt="Торт на заказ" data-category="tort" loading="lazy">
+          <img class="gallery__photo" src="images/works/work-3.jpg" data-i18n-alt="photo.pirozhnoe" alt="Пирожные ассорти" data-category="pirozhnoe" loading="lazy">
+          <img class="gallery__photo" src="images/works/work-4.jpg" data-i18n-alt="photo.pirozhnoe" alt="Пирожные ассорти" data-category="pirozhnoe" loading="lazy">
+          <img class="gallery__photo" src="images/works/work-5.jpg" data-i18n-alt="photo.pirog" alt="Домашний пирог" data-category="pirog" loading="lazy">
+          <img class="gallery__photo" src="images/works/work-6.jpg" data-i18n-alt="photo.kapkeyk" alt="Праздничные капкейки" data-category="kapkeyk" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+      <div class="container contacts__inner">
+        <h2 class="section-title" data-i18n="contacts.title">Контакты</h2>
+        <p data-i18n="contacts.text">Свяжитесь любым удобным способом — обсудим ваш торт.</p>
+        <div class="contacts__links">
+          <a href="tel:+37498050061" class="btn btn--outline">📞 +374 98 050 061</a>
+          <a href="https://wa.me/37498050061" class="btn btn--outline" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://instagram.com/__rubenyan__" class="btn btn--outline" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Rubenyan's pastry</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
